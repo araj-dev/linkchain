@@ -68,7 +68,7 @@ Get in https://external-host.com
 ## Hosting
 
 linkchain server is hosted by araj-dev's vercel server.
-please contact me if you want to host your own server.
+please contact [araj-dev](ja.fileonly@gmail.com) if you want to host your own server.
 
 ## Contribution
 
@@ -91,3 +91,4 @@ In progress
 - [] Enterprise plan
 - [] Namespaced data
 - [] More option for security
+- [] Self-hosting option
