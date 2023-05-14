@@ -6,6 +6,9 @@ Easy, Simple, LightWeight, and Fast.
 
 You can use cross domain storage without any browser's storage (cookie, localStorage, etc...).
 
+## Demo
+https://lc.araj.jp
+
 ## Caution
 
 This is experimental project and beta version.
