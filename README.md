@@ -26,10 +26,6 @@ Server limit is too small.
 
 ### From NPM (In progress)
 
-```bash
-npm install linkchain
-```
-
 ## Usage
 
 ### Browser
@@ -54,7 +50,6 @@ Set in https://my-host.com
 ```
 
 Get in https://external-host.com
-
 ```html
 <script>
   linkchain = window.linkchain || {}

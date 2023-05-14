@@ -1,6 +1,6 @@
 const API_HOST = "lc.araj.jp/api"
-const SET_ENDPOINT = `http://${API_HOST}/set`
-const GET_ENDPOINT = `http://${API_HOST}/get`
+const SET_ENDPOINT = `https://${API_HOST}/set`
+const GET_ENDPOINT = `https://${API_HOST}/get`
 
 export const set = async (key: string, data: any) => {
   const response = await fetch(`${SET_ENDPOINT}?lck=${key}`, {
