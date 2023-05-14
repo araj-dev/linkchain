@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script async src="/dist/linkchain.min.js"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>Demo</h1>
+    <a href="/test">internal link</a>
+    <a href="https://example.com?originalQuery=value" data-lc="true"
+      >external link</a
+    >
+
+    <script>
+      linkchain = window.linkchain || {}
+      linkchain.ready = function (lc) {
+        console.log(lc.data)
+        lc.set({ test: "test-text" })
+      }
+    </script>
+  </body>
+</html>
