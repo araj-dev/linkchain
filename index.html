@@ -4,21 +4,49 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script async src="https://lc.araj.jp/lc.min.js"></script>
+    <script async src="./dist/linkchain.min.js"></script>
     <title>Demo site</title>
   </head>
   <body>
     <h1>Demo</h1>
-    <a href="/test">internal link</a>
-    <a href="https://example.com?originalQuery=value" data-lc="true"
-      >external link</a
-    >
+    <div>
+      <a href="/test" data-lc="true">Show data after move page</a>
+    </div>
+
+    <div>
+      <a href="https://example.com?originalQuery=value" data-lc="true"
+        >external link(in progress)</a
+      >
+    </div>
+
+    <form action="/test">
+      <label>
+        Change test data in querys
+        <input type="text" name="data" value="value" />
+      </label>
+      <input type="submit" value="submit" />
+    </form>
+    <div>
+      <h2>Sent data</h2>
+      <pre id="sentdata"></pre>
+    </div>
+    <div>
+      <h2>Received Data</h2>
+      <pre id="testdata"></pre>
+    </div>
 
     <script>
       linkchain = window.linkchain || {}
       linkchain.ready = function (lc) {
-        console.log(lc.data)
-        lc.set({ test: "test-text" })
+        document.querySelector("#testdata").innerHTML = JSON.stringify(lc.data)
+
+        const url = new URL(location.href)
+        const d = url.searchParams.get("data")
+        lc.set({ test: d })
+
+        document.querySelector("#sentdata").innerHTML = JSON.stringify({
+          test: d,
+        })
       }
     </script>
   </body>

@@ -15,7 +15,7 @@ ready(() => {
     }
   })
 
-  modifyExternalLinks(uuid, true).then(modified => {
+  modifyExternalLinks(uuid, false).then(modified => {
     if (typeof window.linkchain?.linkReady === "function") {
       window.linkchain.linkReady(modified)
     }

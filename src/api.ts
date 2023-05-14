@@ -10,6 +10,9 @@ export const set = async (key: string, data: any) => {
   if (!response.ok) {
     throw new Error("Network response was not ok")
   }
+  response.text().then(() => {
+    return null
+  })
   return
 }
 
@@ -18,6 +21,5 @@ export const get = async (key: string) => {
   if (!response.ok) {
     throw new Error("Network response was not ok")
   }
-  console.log(response.body)
-  return response.text()
+  return await response.json()
 }

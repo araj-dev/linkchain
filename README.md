@@ -1,4 +1,5 @@
 # linkchain
+
 linkchain is global one-time storage for cross domain.
 
 Easy, Simple, LightWeight, and Fast.
@@ -6,6 +7,7 @@ Easy, Simple, LightWeight, and Fast.
 You can use cross domain storage without any browser's storage (cookie, localStorage, etc...).
 
 ## Caution
+
 This is experimental project and beta version.
 
 Do not commercial use.
@@ -33,9 +35,10 @@ npm install linkchain
 ### Browser
 
 Use sdk script via cdn (in both domains)
-````html
+
+```html
 <script async src="https://lc.araj.jp/lc.min.js"></script>
-````
+```
 
 Set in https://my-host.com
 
@@ -68,19 +71,23 @@ linkchain server is hosted by araj-dev's vercel server.
 please contact me if you want to host your own server.
 
 ## Contribution
+
 Create issue or PR
 
 ## Licence
+
 MIT License
 
 ## Author
+
 [araj-dev](https://github.com/araj-dev)
 
 ## References
+
 In progress
 
-
 # LoadMap
- - [] Enterprise plan
- - [] Namespaced data
- - [] More option for security
+
+- [] Enterprise plan
+- [] Namespaced data
+- [] More option for security
