@@ -1,4 +1,4 @@
-const API_HOST = "localhost:3000/api"
+const API_HOST = "lc.araj.jp/api"
 const SET_ENDPOINT = `http://${API_HOST}/set`
 const GET_ENDPOINT = `http://${API_HOST}/get`
 

@@ -6,6 +6,10 @@ Easy, Simple, LightWeight, and Fast.
 
 You can use cross domain storage without any browser's storage (cookie, localStorage, etc...).
 
+## Caution
+This is experimental project.
+Any problems are not my responsibility.
+
 ## Setup
 
 ### Browser
@@ -43,7 +47,7 @@ Set in https://my-host.com
 <script>
   linkchain = window.linkchain || {}
   linkchain.ready = function (lc) {
-    setLC({
+    lc.set({
       myName: "araj-dev",
     })
   }
@@ -56,15 +60,14 @@ Get in https://external-host.com
 <script>
   linkchain = window.linkchain || {}
   linkchain.ready = function (lc) {
-    console.log(lc)
+    console.log(lc.data)
     // {myName: "araj-dev"}
   }
 </script>
 ```
 
 ## Hosting
-
-linkchain server is hosted by my cloudflare
+linkchain server is hosted by araj-dev's vercel server.
 
 ## Contribution
 
