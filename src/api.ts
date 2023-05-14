@@ -10,7 +10,7 @@ export const set = async (key: string, data: any) => {
   if (!response.ok) {
     throw new Error("Network response was not ok")
   }
-  return await response.json()
+  return
 }
 
 export const get = async (key: string) => {
