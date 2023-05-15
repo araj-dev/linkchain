@@ -53,6 +53,7 @@ Set in https://my-host.com
 ```
 
 Get in https://external-host.com
+
 ```html
 <script>
   linkchain = window.linkchain || {}
@@ -86,6 +87,7 @@ In progress
 
 # LoadMap
 
+- [] Use jwt for security
 - [] Enterprise plan
 - [] Namespaced data
 - [] More option for security
