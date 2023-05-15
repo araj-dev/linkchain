@@ -87,7 +87,7 @@ In progress
 
 # LoadMap
 
-- [] Use jwt for security
+- [] Use jwt / E2EE for security
 - [] Enterprise plan
 - [] Namespaced data
 - [] More option for security
