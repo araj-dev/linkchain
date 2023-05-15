@@ -2,7 +2,7 @@
 
 linkchain is global one-time storage for cross domain.
 
-Easy, Simple, LightWeight, and Fast.
+Easy, Simple, LightWeight(~1kB), and Fast.
 
 You can use cross domain storage without any browser's storage (cookie, localStorage, etc...).
 
