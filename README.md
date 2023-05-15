@@ -19,6 +19,10 @@ Any problems are not my responsibility.
 
 Server limit is too small.
 
+## Data flow
+![fig](https://github.com/araj-dev/linkchain/assets/19401710/100e29ef-7cbd-4544-a90a-53393a909c62)
+
+
 ## Setup
 
 ### Browser
